@@ -68,8 +68,9 @@ Ce fichier .ber génère cette map :
 
 ![Map_avec_image](.media/map3.png)
 
+<br>
+
 # Contrôle 🕹️
-	
 
     
 | KEY |	OBJECT   |
@@ -83,53 +84,21 @@ Ce fichier .ber génère cette map :
     
 Utilisez WASD ou les flèchees directionnelles pour vous déplacer.
 	
+Après avoir récupéré tous les os, la sortie s'ouvre et vous pouvez vous échapper en bas.
 	
-After getting all the coin bags, the exit opens and you can escape downstairs.
-	
-You can close the game by Clicking on the red cross on the window’s frame, or pressing Q or Esc.
-	
-<h2 align="center" id="how-do-i-test-it"> How do I test it? </h2>  
+Vous pouvez fermer le jeu en cliquant sur la croix rouge sur le cadre de la fenêtre, ou en appuyant sur Q ou Echap.	
 
-To test the game itself it's recommendable to run it with some different maps and try things like:
+## Note Final et Commentaires 📔
 
-Running into a wall and see if you're blocked or if the movements counter increase while you're stucked.
+<br>
 
-Go to the exit withou collecting all the coins.
+| |
+| --- |
+| ![](.media/note.png) |
 
-Go through the same path at least one time.
 
-Try to move with the arrow keys and with WASD.
-
-Check if the window closes when clicking the red cross on window's frame, same with Esc or Q.
-
-Try to minimize the window and open it again.
-
-Run the project with Valgrind to see if there's any memory leak.
-
-To test some map validations as
-No map, missing argv, multiple argv, invalid extension, map with an empty line, invalid map parameter
-missing W parameter, missing C parameter, missing E parameter, missing P parameter, extra P parameter
-I created my own [Tester](https://github.com/augustobecker/so_long_tester).
-
-To test the code in this repo Clone this repo and cd into it:
-```
-git clone https://github.com/augustobecker/so_long
-
-cd so_long/
-```
-Now, clone the Tester
-
-```
-git clone https://github.com/augustobecker/so_long_tester
-```
-
-Go into the test folder and run with make:
-
-```
-cd so_long_tester
-make
-```
-
-If you did everything correctly you should see something like this
-
-![image](https://user-images.githubusercontent.com/81205527/179400332-9e80f631-7d46-464b-a0eb-e481b48ad6b4.png)
+| | |
+| --- | --- |
+| Correcteur 1 | <img src=".media/com1.png" /> |
+| Correcteur 2 | <img src=".media/com2.png" /> |
+| Correcteur 3 | <img src=".media/com3.png" /> |
