@@ -7,6 +7,7 @@
 # So_Long 🎮
 
 Le cinquième projet de l'école de programmation 42. C'est le premier projet graphique du cursus, nous pouvons choisir entre 3 options - FdF, Fractol et So_long - qui couvrent en général des domaines différents, mais tous les 3 sont des projets graphiques. Le so_long consiste en un jeu top-down, que nous codons à partir de zéro en utilisant la bibliothèque graphique MiniLibx. Il comprend une série de validations à partir de la carte qui est passée en argument, des contrôles pour éviter les fuites de mémoire, l'ingénierie du jeu, la gestion des fenêtres, des événements, des sprites et des cartes.
+Vous pouvez trouver le sujet [ici](en.subject.pdf).
 
 
 # Télécharge et joue !
