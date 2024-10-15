@@ -10,7 +10,7 @@ Le cinquième projet de l'école de programmation 42. C'est le premier projet gr
 Vous pouvez trouver le sujet [ici](en.subject.pdf).
 
 
-# Télécharge et joue !
+# Télécharge et joue ⬇️
 
 Clone le projet.
 
