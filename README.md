@@ -1,81 +1,51 @@
-![So_Long logo](.media/so_long_logo.png)
+![So_Long logo](.media/map.png)
 
 ![Grade badge](https://img.shields.io/badge/120_%2F_100-004d40?label=final%20grade&labelColor=151515&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMiAxNy4yN0wxOC4xOCAyMWwtMS42NC03LjAzTDIyIDkuMjRsLTcuMTktLjYxTDEyIDIgOS4xOSA4LjYzIDIgOS4yNGw1LjQ2IDQuNzNMNS44MiAyMXoiLz48L3N2Zz4=) ![Language Badge](https://img.shields.io/badge/C-fe428e?logo=C&label=language&labelColor=151515) ![Norminette Badge](https://img.shields.io/badge/passing-brightgreen?logo=42&label=norminette&labelColor=151515) ![Library Badge](https://img.shields.io/badge/my_own_libft-004d40?logo=GitHub&label=library%20used&labelColor=151515)
 <p align="center">
 	Ce projet t'a aidé ? Mets-lui une 🌟!
 
+#So_Long 🎮
+
+Le cinquième projet de l'école de programmation 42. C'est le premier projet graphique du cursus, nous pouvons choisir entre 3 options - FdF, Fractol et so_long - qui couvrent en général des domaines différents, mais tous les 3 sont des projets graphiques. Le so_long consiste en un jeu top-down, que nous codons à partir de zéro en utilisant la bibliothèque graphique MiniLibx. Il comprend une série de validations à partir de la carte qui est passée en argument, des contrôles pour éviter les fuites de mémoire, l'ingénierie du jeu, la gestion des fenêtres, des événements, des sprites et des cartes.
+
+
+#Télécharge et joue !
+
+Clone le projet.
+
+```
+git clone https://github.com/ugozchi/42_So_Long.git
+cd 42_So_Long
+```
+
+<br>
+
+## Options possibles ⚙️
+
+Ici, vous pouvez utiliser les options classiques d'un Makefile (options ci-dessous) mais aussi l'option bonus qui vous permettra d'ajouter vos fonctions bonus dans votre fichier archive libft.a si vous les avez fait.  
+Toute cette partie correspond à ce que l'on doit rendre pour ce faire corriger.
+
+<br>
+
+| Option | Description |
+| --- | --- |
+| `make` | Créer un fichier archive libftpritnf.a avec tous les fichiers |
+| `make clean` | Supprime le dossier contenant les fichiers objets ```.o```|
+| `make fclean` | Execute `clean` puis supprime le fichier archive ```.a```|
+| `make re` | Execute `fclean` puis `make` |
+
+<br>
+
+Pour commencer à jouer lancer la commande
+	./so_long asstes/maps/valid/"select a map"
 
 
 
 
-<h1 align="center"> so_long - @42sp </h1>
 
-<p align="center">:information_source: A small 2D Game made using the MiniLibX Graphics Library - Textures, sprites and tiles included. </p>
-<p align="center"><a href="https://www.42sp.org.br/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=SP&color=000&style=for-the-badge&logo=42""></a></p>
-<p align="center"><a href="https://github.com/augustobecker/so_long" target="_blank"><img align="center" alt="so_long" src="https://user-images.githubusercontent.com/81205527/179134510-48689e9e-f8e4-4165-be40-2e0ec8f5d60d.png"> </a></p>
-<p align="center">123/100 :white_check_mark:</p>
-<p align="center"><a href="https://github.com/augustobecker/SoLong/blob/main/READMES/README-ptbr.md" target="_blank"><img src="https://img.shields.io/badge/dispon%C3%ADvel%20tamb%C3%A9m%20em-PT--BR-yellow"></a></p>
-<p align="center"><img src="https://user-images.githubusercontent.com/81205527/174392536-21619238-638a-4173-a77c-1b168c6c7898.png"> </p>
 
-<p align="center">:magic_wand: Everything small is just a smaller version of something big</p>
 
-## Index
-* [What is so_long?](#what-is-so_long)
-* [Requirements](#requirements)
-* [How does it work?](#how-does-it-work)
-	* [Maps](#maps)	
-	* [Controls](#controls)
-* [How do I test it?](#how-do-i-test-it)
-* [42 Cursus](#42-cursus)
-* [Author](#author)
 
-<h2 align="center" id="what-is-so_long"> What is so_long? </h2>
-
-The fifth project at 42 programming school.
-It's the first graphical project in the <a href="https://github.com/augustobecker/42cursus">Cursus </a>, we can choose between 3 options - FdF, Fractol and so_long - that in general
-cover different areas, but all 3 are graphical projects. The so_long consists of a top-down game, which we code from scratch using
-the MiniLibx graphical library. It involves a series of validations from the map that is passed as argument,
-checks to prevent memoy leaks, the game engineering, managing windows, events, sprites and maps.
-	
-<h2 align="center" id="requirements"> Requirements </h2>
-
-<p  align="center"> :warning: The project must be written in accordance with the <a href="https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf" target="_blank">Norm</a> </p>
-The Norm  is a programming standard that defines a set of rules to follow when writing code at 42. It applies to all C projects within the Common Core by default, and
-to any project where it's specified. These are some of them:
-
-    Each function must be maximum 25 lines, not counting the function's own curly brackets.
-    
-    Each line must be at most 80 columns wide, comments included.
-    
-    A function can take 4 named parameters maximum.
-    
-    You can't declare more than 5 variables per function.
-    
-    You're not allowed to use: for , do...while , switch , case ,  goto  ,
-    ternary operators such as `?' and VLAs - Variable Length Arrays.
-  The norminette (as we call the norm at 42) is in python and open source.
-  
-  Its repository is available at https://github.com/42School/norminette.
-    
-<h2 align="center" id="how-does-it-work"> How does it work? </h2>
-
-You'll be able to play once you install the <a href="https://github.com/42Paris/minilibx-linux">MiniLibx</a> features or if you're using one of the machines at 42.
-
-To play, first compile the project with make:
-
-	make
-	
-In case you wanna play the bonus version:
-
-	make bonus
-	
-So, run ./so_long followed by the map:
-	
-	./so_long assets/maps/valid/map2.ber	
-
-For bonus:
-	
-	./so_long_bonus assets/maps/valid/bonus/map5.ber
 	
 <h3 id="maps" align="center"> Maps </h3>   
 You can parse any kind of map, as long as it respects the below rules:
