@@ -62,7 +62,7 @@ void	ft_check_for_empty_line(char *map, t_game *game)
 	int	i;
 
 	i = 0;
-	if (map[0] == '\n')
+	if (map[0] == '\n' || map[0] == '\0')
 	{
 		free(map);
 		ft_error_msg("Invalid map.\

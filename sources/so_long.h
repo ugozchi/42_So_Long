@@ -100,6 +100,7 @@ typedef struct s_game
 	void		*win_ptr;
 	int			movements;
 	int			player_sprite;
+	char		**flood_file_check;
 	t_map		map;
 	t_bool		map_alloc;
 	t_image		wall;
@@ -140,5 +141,7 @@ int		ft_close_game(t_game *game);
 void	ft_free_all_allocated_memory(t_game *game);
 void	ft_destroy_images(t_game *game);
 void	ft_free_map(t_game *game);
+void	check_flood_fill(t_game *game);
+void	ft_free_flood_fill_map(t_game *game);
 
 #endif

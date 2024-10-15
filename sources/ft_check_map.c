@@ -24,6 +24,7 @@ void	ft_check_map(t_game *game)
 	ft_check_columns(game);
 	ft_count_map_parameters(game);
 	ft_verify_map_parameters(game);
+	check_flood_fill(game);
 }
 
 void	ft_check_rows(t_game *game)
@@ -97,8 +98,8 @@ void	ft_verify_map_parameters(t_game *game)
 {
 	if (game->map.coins == 0)
 		ft_error_msg("Invalid Map. There are no Coins!", game);
-	else if (game->map.exit == 0)
-		ft_error_msg("Invalid Map. There is no Exit.", game);
+	else if (game->map.exit != 1)
+		ft_error_msg("Invalid Map. There is no Exit or to much Exit.", game);
 	else if (game->map.players != 1)
 		ft_error_msg("Invalid Map. Invalid Player quantity. \
 It's a single player game.", game);
