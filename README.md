@@ -6,7 +6,7 @@
 
 # So_Long 🎮
 
-Le cinquième projet de l'école de programmation 42. C'est le premier projet graphique du cursus, nous pouvons choisir entre 3 options - FdF, Fractol et so_long - qui couvrent en général des domaines différents, mais tous les 3 sont des projets graphiques. Le so_long consiste en un jeu top-down, que nous codons à partir de zéro en utilisant la bibliothèque graphique MiniLibx. Il comprend une série de validations à partir de la carte qui est passée en argument, des contrôles pour éviter les fuites de mémoire, l'ingénierie du jeu, la gestion des fenêtres, des événements, des sprites et des cartes.
+Le cinquième projet de l'école de programmation 42. C'est le premier projet graphique du cursus, nous pouvons choisir entre 3 options - FdF, Fractol et So_long - qui couvrent en général des domaines différents, mais tous les 3 sont des projets graphiques. Le so_long consiste en un jeu top-down, que nous codons à partir de zéro en utilisant la bibliothèque graphique MiniLibx. Il comprend une série de validations à partir de la carte qui est passée en argument, des contrôles pour éviter les fuites de mémoire, l'ingénierie du jeu, la gestion des fenêtres, des événements, des sprites et des cartes.
 
 
 # Télécharge et joue !
@@ -36,65 +36,52 @@ Toute cette partie correspond à ce que l'on doit rendre pour ce faire corriger.
 
 <br>
 
-Pour commencer à jouer lancer la commande
+Pour commencer à jouer lancer la commande :
+```
 	./so_long asstes/maps/valid/"select a map"
+```
 
+<br>
 
+# Maps 🗺️
 
+Vous pouvez analyser n'importe quel type de carte, à condition qu'elle respecte les règles ci-dessous :
+- La carte doit être un fichier .ber.
+- La carte ne doit contenri que ces caractères :
+		| CHAR |	OBJECT   |
+		| --------- | ---------- |
+		| 1         |   Wall   |
+		| C	        | Coin |
+		| E	        |   Exit  |
+		| P         |   Player  |      
+		| 0         |   Floor     |
+- La map doit être entouré par des murs '1'
+- Un chemin vers la sortie 'E' doit exister et tous les coins doivent être atteignables.
 
+Regarder quelques exemples dans le dossier /assets/maps.
 
+Voici l'une d'entre elle : assets/maps/valid/map3.ber
 
+![Map_sans_image](.media/ber.png)
 
+Ce fichier .ber génère cette map :
 
+![Map_avec_image](.media/map3.png)
+
+# Contrôle 🕹️
 	
-<h3 id="maps" align="center"> Maps </h3>   
-You can parse any kind of map, as long as it respects the below rules:
 
-The map must be a .ber file.
-
-And can only contain these characters:
-    
-| CHAR |	OBJECT   |
-| --------- | ---------- |
-| 1         |   Wall   |
-| C	        | Coin |
-| E	        |   Exit  |
-| P         |   Player  |      
-| 0         |   Floor     |
-    
-For bonus there's an extra character - which makes you lose once touch it.
-    
-| CHAR |	OBJECT   |
-| --------- | ---------- |
-| T         |   Toxic River  |
-
-
-The map must be rectangular and surrounded by walls '1'.
-
-The map must contain at least one exit, one collectible, and one starting position.
-
-Check some examples in the folder /assets/maps.
-	
-As in assets/maps/valid/map2.ber:
-
-<img src="https://user-images.githubusercontent.com/81205527/163024984-1ff511c1-17d2-4eef-8d97-90cc8a884c73.png">
-This .ber file generates this map:
-    
-    
-<img src="https://user-images.githubusercontent.com/81205527/174420150-0ee15e42-c7c3-4854-936b-fffaf13683c2.png">
-	
-<h3 id="controls" align="center"> Controls </h3>   
     
 | KEY |	OBJECT   |
 | --------- | ---------- |
-| W or ⬆️        |    Move up   |
-| A	or ⬅️        |    Move left |
-| S	or ⬇️     |    Move down   |
-| D or ➡️       |   Move para right|      
-| Q or Esc      |   Close the game     | 
+| W or ⬆️        |    Monte   |
+| A	or ⬅️        |    Gauche |
+| S	or ⬇️     |    Descend   |
+| D or ➡️       |   Droit|      
+| Q or Esc      |   Quitte     | 
     
     
-Use WASD or arrow keys to move.
+Utilisez WASD ou les flèchees directionnelles pour vous déplacer.
 	
 	
 After getting all the coin bags, the exit opens and you can escape downstairs.
