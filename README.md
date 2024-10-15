@@ -48,13 +48,13 @@ Pour commencer à jouer lancer la commande :
 Vous pouvez analyser n'importe quel type de carte, à condition qu'elle respecte les règles ci-dessous :
 - La carte doit être un fichier .ber.
 - La carte ne doit contenri que ces caractères :
-		| CHAR |	OBJECT   |
-		| --------- | ---------- |
-		| 1         |   Wall   |
-		| C	        | Coin |
-		| E	        |   Exit  |
-		| P         |   Player  |      
-		| 0         |   Floor     |
+| CHAR |	OBJECT   |
+| --------- | ---------- |
+| 1         |   Wall   |
+| C	        | Coin |
+| E	        |   Exit  |
+| P         |   Player  |      
+| 0         |   Floor     |
 - La map doit être entouré par des murs '1'
 - Un chemin vers la sortie 'E' doit exister et tous les coins doivent être atteignables.
 
